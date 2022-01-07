@@ -9,11 +9,11 @@ class Test extends Model
 {
     use HasFactory;
 
-    public $timestamps = false;
+    public $timestamps = false; // vypnutie pouzivanie timestamps stlpcov v DB
 
-    protected $table = 'test';
+    protected $table = 'test'; // zadefinovanie vlastneho nazvu tabulky kedze laravel automaticky generuje nazvy v mnoznom case
 
     protected $fillable = [
-        'test'
+        'test' // polia ktore sa budu naplnat
     ];
 }
