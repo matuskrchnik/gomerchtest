@@ -41,4 +41,3 @@ Route::get('user', function (Request $request) {
 
 
 
-Route::get('test', [Api\TestController::class, 'index']); 
